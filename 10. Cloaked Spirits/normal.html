@@ -1,0 +1,82 @@
+<div id='d'>
+  <div id='a'></div>
+  <div id='b'></div>
+  <div id='a'></div>
+</div>
+
+<div class='o' id='t'>
+  <div class='p'></div>
+</div>
+
+<div class='o r'>
+  <div class='p f'></div>
+</div>
+
+<div class='o' id='u'>
+  <div class='p'></div>
+</div>
+
+
+<style>
+
+  body {
+   background: #62306D;
+  }
+
+  #d {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    left: 50px;
+  }
+
+  #a {
+    background: #F7EC7D;
+    width: 100px;
+    height: 100px;
+  }
+
+  #b {
+    background: #F7EC7D;
+    width: 100px;
+    height: 200px;
+  }
+
+  .o {
+    height: 100px;
+    width: 100px;
+    background: #AA445F;
+    border-radius: 100%;
+    display: grid;
+    position: absolute;
+    top: 150;
+  }
+
+  .p {
+    height: 60px;
+    width: 60px;
+    background: #E38F66;
+    border-radius: 100%;
+    place-self: center;
+  }
+
+  .r {
+    background: #E38F66;
+    top: 50;
+    left: 150;
+  }
+  
+  .f {
+    background: #AA445F;
+  }
+
+  #u {
+    right: 50;
+  }
+
+  #t {
+    left: 50;
+  }
+
+</style>

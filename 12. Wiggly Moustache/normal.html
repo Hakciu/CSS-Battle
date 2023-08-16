@@ -1,0 +1,50 @@
+<div id="a">
+  <div id='b'></div>
+</div>
+<div id="a"></div>
+<div id="a">
+  <div id='c'></div>
+</div>
+
+
+<style>
+  body {
+    background: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #a {
+    width: 60px;
+    height: 30px;
+    border: 20px solid #D86F45;
+  }
+
+  #a:nth-of-type(odd) {
+    border-radius: 0 0 99px 99px;
+    border-top: none;
+    margin-top: 50px;
+  }
+
+  #b, #c {
+    background: #D86F45;
+    width: 20px;
+    height: 10px;
+    border-radius: 99px 99px 0 0;
+  }
+
+  #b {
+    margin: -10px 0 0 -20px;
+  }
+
+  #c {
+    margin: -10px 0 0 60px;
+  }
+
+  #a:nth-of-type(even) {
+    border-radius: 99px 99px 0 0;
+    border-bottom: none;
+    margin: -50px -20px 0 -20px;
+  }
+</style>

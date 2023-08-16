@@ -1,0 +1,42 @@
+<div id='d'>
+  <div id='a'></div><div id='b'></div><div id='c'></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    background: #E3516E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #a, #b, #c {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #a {
+    background: #51B5A9;
+    border-radius: 100% 0 0;
+    grid-area: 1 / 1
+  }
+  
+  #b {
+    background: #FADE8B;
+    border-radius: 0 100% 0 0;
+    grid-area: 1 / 2;
+  }
+  
+  #c {
+    background: #F7F3D7;
+    border-radius: 0 0 0 100%;
+    grid-area: 2 / 1;
+  }
+
+  #d {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+</style>
