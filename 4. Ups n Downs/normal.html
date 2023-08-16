@@ -1,0 +1,39 @@
+<span id='box'>
+  <div id='a'></div>
+  <div id='b'></div>
+  <div id='c'></div>
+</div>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    border-radius: 0 0 50% 50%
+  }
+
+  body {
+    margin: 0;
+    background: #62306D;
+    display: grid;
+  }
+
+  #box {
+    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #a {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  #b {
+    border-radius: 50% 50% 0 0;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  #c {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+</style>
