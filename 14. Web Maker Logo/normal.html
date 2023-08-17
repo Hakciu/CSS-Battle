@@ -1,0 +1,75 @@
+<div id='l'>
+  <div id='a'></div>
+  <div id='b'></div>
+</div>
+
+<div id='r'>
+  <div id='c'></div>
+  <div id='d'></div>
+</div>
+
+<style>
+
+  body {
+    background: #F2F2B6;
+  }
+
+  #l, #r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+
+  #a, #b, #c, #d {
+    position: absolute;
+    top: 77
+  }
+
+  #a { 
+    left: 52
+  }
+
+  #b {
+    left: 72
+  }
+
+  #c { 
+    left: 162
+  }
+
+  #d { 
+    left: 182
+  }
+
+
+  #a, #b {
+    width: 0; 
+    height: 0; 
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 130px solid #FF6D00;
+    z-index: 2;
+  }
+
+  #b {
+    border-top: 130px solid #FD4602;
+    z-index: 1;
+    
+  }
+
+  #c, #d {
+    width: 0; 
+    height: 0; 
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #FD4602;
+    z-index: 2;
+  }
+
+  #d {
+    border-bottom: 130px solid #FF6D00;
+    z-index: 1;
+  }
+</style>
