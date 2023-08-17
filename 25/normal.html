@@ -1,0 +1,55 @@
+<div id="cont">
+  <div id="left">
+    <div id="a1" class="a"></div>
+    <div id="b1" class="b"></div>
+  </div>
+  <div id="right">
+    <div id="a2" class="a"></div>
+    <div id="b2" class="b"></div>
+  </div>
+</div>
+
+<style>
+  .a {
+    width: 80px;
+    height: 100px;
+    background: #1a4341;
+  }
+  .b {
+    width: 80px;
+    height: 60px;
+    background: #f3ac3c;
+  }
+  body {
+    background: #998235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cont {
+    display: flex;
+    gap: 20px;
+  }
+
+  #left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #right {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  #a1,
+  #b1 {
+    border-radius: 0 50px;
+  }
+  #a2,
+  #b2 {
+    border-radius: 50px 0;
+  }
+</style>

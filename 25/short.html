@@ -1,13 +1,57 @@
-<div></div>
-
+<div id="cont">
+  <div id="left">
+    <div id="a1" class="a"></div>
+    <div id="b1" class="b"></div>
+  </div>
+  <div id="right">
+    <div id="a2" class="a"></div>
+    <div id="b2" class="b"></div>
+  </div>
+</div>
 <style>
-  div {
-    width: 100px;
+  .a {
+    width: 80px;
     height: 100px;
-    background: #b5e0ba;
+    background: #1a4341;
   }
-
+  .b {
+    width: 80px;
+    height: 60px;
+    background: #f3ac3c;
+  }
+  .a,
+  #a1 {
+    border-radius: 0 50px;
+  }
+  .b,
+  #b1 {
+    border-radius: 0 50px;
+  }
+  .a,
+  #a2 {
+    border-radius: 50px 0;
+  }
+  .b,
+  #b2 {
+    border-radius: 50px 0;
+  }
   body {
-      margin: 0;
+    background: #998235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #cont {
+    display: flex;
+    gap: 20px;
+  }
+  #left,
+  #right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #right {
+    flex-direction: column-reverse;
   }
 </style>
